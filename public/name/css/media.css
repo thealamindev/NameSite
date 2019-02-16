@@ -1,0 +1,352 @@
+/*======================== Medium devices ======================*/
+@media (min-width: 768px) and (max-width: 991px) {
+.navbar .form-control {
+	padding: .5rem 0.25rem;
+}    
+.login a, .navbar-light .navbar-nav .nav-link {
+	font-size: 18px;
+}    
+.login {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#alpha-search {
+	padding-top: 0px;
+}
+.banner-text {
+	padding-top: 90px;
+	padding-bottom: 195px;
+}
+.search-name .btn {
+	padding: 1.5px 20px;
+}    
+.names-by-letter {
+    text-align: center;
+}    
+.names-by-letter span {
+	display: block;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.commnets-like span {
+	float: none;
+	display: block;
+	margin-left: -10px;
+}
+.overlay2 i {
+	top: 36%;
+	left: 26%;
+}
+.blog-item h3, .blog-item a {
+	font-size: 18px;
+}
+.footer-heading h3 {
+	font-size: 18px;
+}
+.links a {
+	font-size: 13px;
+	padding-bottom: 10px;
+}
+.extra-class {
+    padding-top: 20px;
+}
+.page-link {
+	padding: .5rem .5rem;
+}
+.extra-class-2, .extra-class-2 input {
+	width: 45px;
+}
+.pagination li {
+	margin-right: 8px;
+}
+.name-details th {
+	font-size: 18px;
+}
+.name-details td {
+	font-size: 14px;
+}
+.all-comments .col-2, .all-comments .col-8 {
+    -moz-flex: 0 0 100%;
+   flex: 0 0 100%;
+   max-width: 100%;
+}
+.reply img {
+    margin: 0 auto;
+}
+.all-comments h3 {  
+	padding-top: 10px;
+}    
+}
+
+/*========================== large device ========================*/
+@media (min-width: 992px) and (max-width: 1199px) {
+.commnets-like span a {
+	margin-left: 5px;
+}
+.blog-item h3 {
+	font-size: 22px;
+}
+#alpha-search {
+	 padding-top: 0px; 
+}    
+}
+/*=============== media 767 only ================*/
+@media (width:767px){
+.overlay2 i {
+	top: 40%;
+	left: 40%;
+}
+}
+/*=============== small device ================*/
+@media (max-width: 767px) {
+.navbar-nav {
+    padding-top: 10px
+}    
+.login {
+	margin-left: 0;
+	margin-right: 0;
+}
+.navbar .form-control {
+	width: 85%;
+}
+.navbar-light .navbar-nav .nav-link {
+	text-align: center;
+}
+.login {
+	text-align: center;
+    padding-top: 5px;
+}
+#banner .col-7 {
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+#banner h3 {
+    font-size: 32px;
+}
+.which-name a {
+	font-size: 18px;
+}
+.banner-text {
+	padding-top: 50px;
+	padding-bottom: 130px;
+}
+.heading h2 {
+	font-size: 24px;
+}
+#alpha-search .col-6 {
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+    text-align: center;
+}
+.names-by-letter span { 
+	display: block;
+	text-align: center;
+	padding-bottom: 20px;
+}
+#alpha-search {
+	padding-top: 0px;
+}
+#name-blog .col-4 {
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+    padding-right: 0;
+}
+#name-blog .left-item img {
+    width: 100%;
+}
+.overlay img { 
+	left: 0px;
+}
+#name-blog .left-top {
+    width: 70%;
+    margin: 0 auto;
+}
+.left-bottom {
+	width: 70%;
+	margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#name-blog .col-8 {
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+#name-blog .col-6 {
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+    padding-right: 15px!important;
+}
+.succes-banner a {
+	font-size: 14px;
+}
+#footer .col-3 {
+    -ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+}    
+#footer .col-2 {
+    -ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+#footer .col-12 {
+    text-align: center;
+}
+.footer-heading h3 {
+	padding-top: 25px;
+}
+#name-blog {
+	padding-bottom: 35px;
+}
+.pagination {
+	border: none;
+	padding: 0;
+}
+.bottom-pagination {
+	border: none;
+	padding: 0;
+	margin-top: 20px;
+}
+.pagination li {
+	margin-right: 7px;
+}
+#name-blog .left-item img {
+	margin-left: 15px;
+    width: 97%;
+}
+#name-blog .pr-0 {
+	padding-right: 15px!important;
+}
+.tahsan-class-2 {
+    display: none;
+}
+#name-blog2 {
+    padding-top: 20px;
+}
+#name-blog2 .col-4 {
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width:100%;
+    padding: 0 30px;
+}
+.all-comments .col-2 {
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+.all-comments .col-10 {
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+}    
+.all-comments span {
+	color: #777777;
+	float: none;
+	display: block;
+}
+.all-comments h3 {
+	padding-top: 10px;
+}
+.all-comments span{
+    padding-top: 10px;
+}
+.lb-header a {
+	padding: 0 40px;
+}    
+}
+/*=============== media 320px ================*/
+@media (width:320px) {
+.commnets-like span a {
+	margin-left: 0px;
+}
+.search-name .btn {
+	padding: 1.5px 10px;
+}    
+.blog-item h3 {
+	font-size: 24px;
+}
+.succes-banner a {
+	padding: 4px 10px;
+}
+.overlay2 i {
+	left: 33%;
+}
+.pagination li {
+	margin-right: 5px;
+}
+.page-link {
+	padding: .3rem .3rem;
+}
+.pagination {
+	border:none;
+    padding: 0;
+    padding-top: 30px;
+}
+.extra-class-2, .extra-class-2 input {
+	width: 25px;
+}
+.pagination span {
+	display: none;
+}
+.name-details td {
+	font-size: 14px;
+}    
+.name-details th {
+	font-size: 16px;
+}
+.table td, .table th {
+	padding: .5rem;
+}
+#name-blog {
+	padding-top: 0px;
+}
+#name-blog .left-item img {
+	margin-left: 5px;
+}
+.tahsan-class-3 {
+    padding-top: 30px;
+}
+.blog-details-page .blog-details b span {
+	padding-left: 5px;
+}    
+}
+/*=============== media 480px ================*/
+@media (width:480px){
+.overlay img {
+	top: 18px;
+}
+.overlay2 i {
+	left: 38%;
+}
+.tahsan-class-3 {
+    padding-top: 10px;
+}
+.pagination li {
+	margin-right: 5px;
+}
+.page-link {
+	padding: .5rem .5rem;
+}
+.pagination {
+	border:none;
+    padding: 0;
+    padding-top: 30px;
+}
+.extra-class-2, .extra-class-2 input {
+	width: 33px;
+}
+#name-blog {
+	padding-top: 20px;
+}
+.name-details th {
+	font-size: 18px;
+}    
+.name-details td {
+	font-size: 15px;
+}    
+}    
