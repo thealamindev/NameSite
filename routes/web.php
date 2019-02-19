@@ -32,4 +32,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //Insert Name
 Route::get('/name/view', 'NameController@nameview');
-Route::get('/name/view', 'NameController@nameview');
+Route::get('/asdasd/view', 'NameController@nameview');
