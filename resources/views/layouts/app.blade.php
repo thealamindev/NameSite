@@ -34,7 +34,10 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('/')}}">Add Name</a>
+                            <a class="nav-link" href="{{url('/name/view')}}">Add Name</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url('/')}}" target="_blank">View Webiste</a>
                         </li>
                     </ul>
 

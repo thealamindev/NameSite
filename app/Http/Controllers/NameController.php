@@ -28,9 +28,9 @@ class NameController extends Controller
         return view('name.namedetails.namedetails');
     }
 
-    public function insertname(){
+    public function nameview(){
 
-        return view('name.backend.name_insert');
+        return view('name.backend.nameinsertview');
     }
 
 }
