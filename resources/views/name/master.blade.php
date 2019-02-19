@@ -31,7 +31,12 @@
                 </li>
             </ul>
             <div class="login">
-                <a href="{{route('login')}}">Login/Register</a>
+                @if(!Auth::user())
+                    <a href="{{route('login')}}">Login/Register</a>
+                    @else
+                    <a href="">Logout</a>
+                @endif
+
             </div>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control" type="search" placeholder="Search Name" aria-label="Search">
