@@ -65,10 +65,11 @@
                             </tr>
                             </thead>
                             <tbody>
+                            @foreach($girls as $girl)
                             <tr>
-                                <td class="name-class"><a href="name-details.html">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
+                                <td class="name-class"><a href="{{route('namedetails', $girl->id)}}">{{ $girl->name }}</a></td>                    
+                                <td class="eng-mean">{{ $girl->english_meaning }}</td>
+                                <td class="ban-mean">{{ $girl->bangla_meaning }}</td>
                                 <td class="rate">
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
@@ -77,162 +78,7 @@
                                     <i class="fa fa-star-half-empty"></i>
                                 </td>
                             </tr>
-                            <tr>
-                                <td class="name-class"><a href="name-details.html">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
-                                <td class="rate">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-empty"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="name-class"><a href="#">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
-                                <td class="rate">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-empty"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="name-class"><a href="#">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
-                                <td class="rate">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-empty"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="name-class"><a href="#">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
-                                <td class="rate">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-empty"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="name-class"><a href="#">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
-                                <td class="rate">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-empty"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="name-class"><a href="#">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
-                                <td class="rate">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-empty"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="name-class"><a href="#">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
-                                <td class="rate">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-empty"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="name-class"><a href="#">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
-                                <td class="rate">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-empty"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="name-class"><a href="#">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
-                                <td class="rate">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-empty"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="name-class"><a href="#">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
-                                <td class="rate">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-empty"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="name-class"><a href="#">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
-                                <td class="rate">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-empty"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="name-class"><a href="#">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
-                                <td class="rate">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-empty"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="name-class"><a href="#">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
-                                <td class="rate">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-empty"></i>
-                                </td>
-                            </tr>
+                            @endforeach
                             </tbody>
                         </table>
                     </div>

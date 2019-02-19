@@ -65,10 +65,11 @@
                             </tr>
                             </thead>
                             <tbody>
+                            @foreach($boys as $boy)
                             <tr>
-                                <td class="name-class"><a href="{{route('namedetails')}}">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
+                                <td class="name-class"><a href="{{route('namedetails', $boy->id)}}">{{ $boy->name }}</a></td>
+                                <td class="eng-mean">{{ $boy->english_meaning }}</td>
+                                <td class="ban-mean">{{ $boy->bangla_meaning }}</td>
                                 <td class="rate">
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
@@ -77,162 +78,7 @@
                                     <i class="fa fa-star-half-empty"></i>
                                 </td>
                             </tr>
-                            <tr>
-                                <td class="name-class"><a href="{{route('namedetails')}}">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
-                                <td class="rate">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-empty"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="name-class"><a href="{{route('namedetails')}}">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
-                                <td class="rate">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-empty"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="name-class"><a href="{{route('namedetails')}}">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
-                                <td class="rate">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-empty"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="name-class"><a href="{{route('namedetails')}}">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
-                                <td class="rate">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-empty"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="name-class"><a href="{{route('namedetails')}}">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
-                                <td class="rate">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-empty"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="name-class"><a href="{{route('namedetails')}}">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
-                                <td class="rate">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-empty"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="name-class"><a href="{{route('namedetails')}}">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
-                                <td class="rate">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-empty"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="name-class"><a href="{{route('namedetails')}}">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
-                                <td class="rate">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-empty"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="name-class"><a href="{{route('namedetails')}}">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
-                                <td class="rate">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-empty"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="name-class"><a href="{{route('namedetails')}}">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
-                                <td class="rate">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-empty"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="name-class"><a href="{{route('namedetails')}}">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
-                                <td class="rate">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-empty"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="name-class"><a href="{{route('namedetails')}}">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
-                                <td class="rate">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-empty"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="name-class"><a href="{{route('namedetails')}}">Aabidah</a></td>
-                                <td class="eng-mean">Worshipper of Allah</td>
-                                <td class="ban-mean">ঈশ্বরের পুজারী</td>
-                                <td class="rate">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-half-empty"></i>
-                                </td>
-                            </tr>
+                            @endforeach
                             </tbody>
                         </table>
                     </div>
@@ -272,7 +118,7 @@
                         <table class="table table-bordered text-center">
                             <tbody>
                             <tr>
-                                <td class="name-class"><a href="{{route('namedetails')}}">Aabidah</a></td>
+                                <td class="name-class"><a href="{{route('namedetails', $boy->id)}}">Aabidah</a></td>
                                 <td class="eng-mean">Worshipper of Allah</td>
                                 <td class="ban-mean">ঈশ্বরের পুজারী</td>
                                 <td class="rate">
@@ -284,7 +130,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="name-class"><a href="{{route('namedetails')}}">Aabidah</a></td>
+                                <td class="name-class"><a href="{{route('namedetails', $boy->id)}}">Aabidah</a></td>
                                 <td class="eng-mean">Worshipper of Allah</td>
                                 <td class="ban-mean">ঈশ্বরের পুজারী</td>
                                 <td class="rate">
@@ -296,7 +142,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="name-class"><a href="{{route('namedetails')}}">Aabidah</a></td>
+                                <td class="name-class"><a href="{{route('namedetails', $boy->id)}}">Aabidah</a></td>
                                 <td class="eng-mean">Worshipper of Allah</td>
                                 <td class="ban-mean">ঈশ্বরের পুজারী</td>
                                 <td class="rate">
@@ -308,7 +154,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="name-class"><a href="{{route('namedetails')}}">Aabidah</a></td>
+                                <td class="name-class"><a href="{{route('namedetails', $boy->id)}}">Aabidah</a></td>
                                 <td class="eng-mean">Worshipper of Allah</td>
                                 <td class="ban-mean">ঈশ্বরের পুজারী</td>
                                 <td class="rate">
@@ -320,7 +166,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="name-class"><a href="{{route('namedetails')}}">Aabidah</a></td>
+                                <td class="name-class"><a href="{{route('namedetails', $boy->id)}}">Aabidah</a></td>
                                 <td class="eng-mean">Worshipper of Allah</td>
                                 <td class="ban-mean">ঈশ্বরের পুজারী</td>
                                 <td class="rate">
@@ -332,7 +178,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="name-class"><a href="{{route('namedetails')}}">Aabidah</a></td>
+                                <td class="name-class"><a href="{{route('namedetails', $boy->id)}}">Aabidah</a></td>
                                 <td class="eng-mean">Worshipper of Allah</td>
                                 <td class="ban-mean">ঈশ্বরের পুজারী</td>
                                 <td class="rate">
@@ -344,7 +190,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="name-class"><a href="{{route('namedetails')}}">Aabidah</a></td>
+                                <td class="name-class"><a href="{{route('namedetails', $boy->id)}}">Aabidah</a></td>
                                 <td class="eng-mean">Worshipper of Allah</td>
                                 <td class="ban-mean">ঈশ্বরের পুজারী</td>
                                 <td class="rate">
@@ -356,7 +202,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="name-class"><a href="{{route('namedetails')}}">Aabidah</a></td>
+                                <td class="name-class"><a href="{{route('namedetails', $boy->id)}}">Aabidah</a></td>
                                 <td class="eng-mean">Worshipper of Allah</td>
                                 <td class="ban-mean">ঈশ্বরের পুজারী</td>
                                 <td class="rate">
@@ -368,7 +214,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="name-class"><a href="{{route('namedetails')}}">Aabidah</a></td>
+                                <td class="name-class"><a href="{{route('namedetails', $boy->id)}}">Aabidah</a></td>
                                 <td class="eng-mean">Worshipper of Allah</td>
                                 <td class="ban-mean">ঈশ্বরের পুজারী</td>
                                 <td class="rate">
@@ -424,4 +270,3 @@
     </section>
 
 @endsection
-

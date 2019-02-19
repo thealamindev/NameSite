@@ -8,7 +8,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 title">
-                    <a href="index.html"><span>Home</span> </a><a href="name-details.html"> > name details</a>
+                    <a href="{{ url('/') }}"><span>Home</span> </a><a href="name-details.html"> > {{ $name->name }}</a>
                 </div>
             </div>
         </div>
@@ -38,22 +38,26 @@
                         <div class="col-12">
                             <div class="">
                                 <div class="name-bg text-center">
-                                    <h3>Aaban</h3>
+                                    <h3>{{ $name->name }}</h3>
                                 </div>
                             </div>
                             <div class="name-text">
                                 <div class="col-12">
                                     <div class="row details-name">
                                         <div class="col-3 pl-0"><p>Gender</p></div>
-                                        <div class="col-9 pr-0"><span>: male</span></div>
+                                        <div class="col-9 pr-0"><span>: {{($name->gender == 1)? "Male":"Female"}}</span></div>
                                     </div>
                                     <div class="row details-name">
                                         <div class="col-3 pl-0"><p>Origin</p></div>
-                                        <div class="col-9 pr-0"><span>: Arabia, Muslim</span></div>
+                                        <div class="col-9 pr-0"><span>: {{$name->origin}}</span></div>
                                     </div>
                                     <div class="row details-name">
-                                        <div class="col-3 pl-0"><p>Meaning</p></div>
-                                        <div class="col-9 pr-0"><span>: The meaning of the name Aaban is 8th Persian month, angel of iron.</span></div>
+                                        <div class="col-3 pl-0"><p>English Meaning</p></div>
+                                        <div class="col-9 pr-0"><span>: {{$name->english_meaning}}</span></div>
+                                    </div>
+                                    <div class="row details-name">
+                                        <div class="col-3 pl-0"><p>Bangla Meaning</p></div>
+                                        <div class="col-9 pr-0"><span>: {{$name->bangla_meaning}}</span></div>
                                     </div>
                                     <div class="row details-name">
                                         <div class="col-3 pl-0"><p>Ratings</p></div>
@@ -61,8 +65,8 @@
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-empty"></i>
+                                    <i class="fa fa-star-o"></i>
                                     </span></div>
                                     </div>
                                     <div class="row details-name">
