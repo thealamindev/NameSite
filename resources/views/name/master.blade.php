@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>@yield('InfiniteName')</title>
+    <link rel="shortcut icon" href="{{asset('/')}}name/images/logo.png">
     <link rel="stylesheet"href="{{asset('/')}}name/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{asset('/')}}name/css/slick.css">
     <link rel="stylesheet" href="{{asset('/')}}name/css/font-awesome.min.css">
@@ -23,10 +24,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
+                <li class="nav-item @yield('boys_name')">
                     <a class="nav-link" href="{{route('boys')}}">Boys Name <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item @yield('girls_name')">
                     <a class="nav-link" href="{{route('girls')}}">Girls Name</a>
                 </li>
             </ul>
@@ -34,14 +35,22 @@
                 @if(!Auth::user())
                     <a href="{{route('login')}}">Login/Register</a>
                     @else
-                    <a href="">Logout</a>
+                    <a href="{{ route('logout') }}"
+                       onclick="event.preventDefault();
+                                     document.getElementById('logout-form').submit();">
+                        Logout
+                    </a>
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
                 @endif
 
             </div>
-            <form class="form-inline my-2 my-lg-0">
+            <!-- <form class="form-inline my-2 my-lg-0">
                 <input class="form-control" type="search" placeholder="Search Name" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
-            </form>
+            </form> -->
         </div>
     </div>
 </nav>

@@ -15,17 +15,19 @@ class NameController extends Controller
     }
 
     public function boys () {
-        $boys = Name::where('gender', 1)->get();
+        $boys = Name::where('gender', 1)->orderBy('name', 'asc')->get();
         return view('name.boys.boys', compact('boys'));
     }
     public function boysalphabate ($alphabate) {
-        $alphabaticboys = Name::where('gender', 1)->where('name', 'like' , $alphabate."%")->get();
-        echo "Ready to work!";
-        //return view('name.boys.boys', compact('alphabaticboys'));
+        $boys = Name::where('gender', 1)->where('name', 'like' , $alphabate."%")->get();
+        return view('name.boys.boys', compact('boys'));
     }
-
+    public function girlsalphabate ($alphabate) {
+        $girls = Name::where('gender', 2)->where('name', 'like' , $alphabate."%")->get();
+        return view('name.girls.girls', compact('girls'));
+    }
     public function girls () {
-        $girls = Name::where('gender', 2)->get();
+        $girls = Name::where('gender', 2)->orderBy('name', 'asc')->get();
         return view('name.girls.girls', compact('girls'));
     }
 
@@ -55,5 +57,10 @@ class NameController extends Controller
         ]);
         return back()->with('status', 'Name Added Successfully!');
     }
-
+    function search()
+    {
+      $search_string = $_GET['search_string'];
+      $searched_names = Name::where('name', 'like' , "%".$search_string."%")->get();
+      return view('name.search', compact('searched_names'));
+    }
 }

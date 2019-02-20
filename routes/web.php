@@ -24,7 +24,9 @@ Route::get('/namedetails/{name_id}', [
     'uses' => 'NameController@namedetails',
     'as'    => 'namedetails',
 ]);
-Route::get('/boys/{alphabate}', 'NameController@boysalphabate');
+Route::get('/boys/alphabate/{alphabate}', 'NameController@boysalphabate');
+Route::get('/girls/alphabate/{alphabate}', 'NameController@girlsalphabate');
+Route::get('/search', 'NameController@search');
 
 
 Auth::routes();

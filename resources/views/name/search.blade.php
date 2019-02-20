@@ -1,19 +1,20 @@
 @extends('name.master')
 
 @section('InfiniteName')
-    Girls Name
+    Boys Name
 @endsection
 
-@section('girls_name')
+@section('boys_name')
     active
 @endsection
 
 @section('content')
+
     <section id="page-title">
         <div class="container">
             <div class="row">
                 <div class="col-12 title">
-                    <a href="{{ asset('/') }}"><span>Home</span> </a><a href="girls-name.html">> girls name</a>
+                    <a href="{{ asset('/') }}"><span>Home</span> </a><a href="name-details.html">> Search</a>
                 </div>
             </div>
         </div>
@@ -69,11 +70,11 @@
                             </tr>
                             </thead>
                             <tbody>
-                            @forelse($girls as $girl)
+                            @forelse($searched_names as $searched_name)
                             <tr>
-                                <td class="name-class"><a href="{{route('namedetails', $girl->id)}}">{{ $girl->name }}</a></td>
-                                <td class="eng-mean">{{ $girl->english_meaning }}</td>
-                                <td class="ban-mean">{{ $girl->bangla_meaning }}</td>
+                                <td class="name-class"><a href="{{route('namedetails', $searched_name->id)}}">{{ $searched_name->name }}</a></td>
+                                <td class="eng-mean">{{ $searched_name->english_meaning }}</td>
+                                <td class="ban-mean">{{ $searched_name->bangla_meaning }}</td>
                                 <td class="rate">
                                     <i class="fa fa-star"></i>
                                     <i class="fa fa-star"></i>
@@ -127,7 +128,7 @@
                           <table class="table table-bordered text-center">
                               <tbody>
                               <tr>
-                                  <td class="name-class"><a href="#">Aabidah</a></td>
+                                  <td class="name-class"><a href="{{route('namedetails', $searched_name->id)}}">Aabidah</a></td>
                                   <td class="eng-mean">Worshipper of Allah</td>
                                   <td class="ban-mean">ঈশ্বরের পুজারী</td>
                                   <td class="rate">
@@ -139,7 +140,7 @@
                                   </td>
                               </tr>
                               <tr>
-                                  <td class="name-class"><a href="#">Aabidah</a></td>
+                                  <td class="name-class"><a href="{{route('namedetails', $searched_name->id)}}">Aabidah</a></td>
                                   <td class="eng-mean">Worshipper of Allah</td>
                                   <td class="ban-mean">ঈশ্বরের পুজারী</td>
                                   <td class="rate">
@@ -151,7 +152,7 @@
                                   </td>
                               </tr>
                               <tr>
-                                  <td class="name-class"><a href="#">Aabidah</a></td>
+                                  <td class="name-class"><a href="{{route('namedetails', $searched_name->id)}}">Aabidah</a></td>
                                   <td class="eng-mean">Worshipper of Allah</td>
                                   <td class="ban-mean">ঈশ্বরের পুজারী</td>
                                   <td class="rate">
@@ -163,7 +164,7 @@
                                   </td>
                               </tr>
                               <tr>
-                                  <td class="name-class"><a href="#">Aabidah</a></td>
+                                  <td class="name-class"><a href="{{route('namedetails', $searched_name->id)}}">Aabidah</a></td>
                                   <td class="eng-mean">Worshipper of Allah</td>
                                   <td class="ban-mean">ঈশ্বরের পুজারী</td>
                                   <td class="rate">
@@ -175,7 +176,7 @@
                                   </td>
                               </tr>
                               <tr>
-                                  <td class="name-class"><a href="#">Aabidah</a></td>
+                                  <td class="name-class"><a href="{{route('namedetails', $searched_name->id)}}">Aabidah</a></td>
                                   <td class="eng-mean">Worshipper of Allah</td>
                                   <td class="ban-mean">ঈশ্বরের পুজারী</td>
                                   <td class="rate">
@@ -187,7 +188,7 @@
                                   </td>
                               </tr>
                               <tr>
-                                  <td class="name-class"><a href="#">Aabidah</a></td>
+                                  <td class="name-class"><a href="{{route('namedetails', $searched_name->id)}}">Aabidah</a></td>
                                   <td class="eng-mean">Worshipper of Allah</td>
                                   <td class="ban-mean">ঈশ্বরের পুজারী</td>
                                   <td class="rate">
@@ -199,7 +200,7 @@
                                   </td>
                               </tr>
                               <tr>
-                                  <td class="name-class"><a href="#">Aabidah</a></td>
+                                  <td class="name-class"><a href="{{route('namedetails', $searched_name->id)}}">Aabidah</a></td>
                                   <td class="eng-mean">Worshipper of Allah</td>
                                   <td class="ban-mean">ঈশ্বরের পুজারী</td>
                                   <td class="rate">
@@ -211,7 +212,7 @@
                                   </td>
                               </tr>
                               <tr>
-                                  <td class="name-class"><a href="#">Aabidah</a></td>
+                                  <td class="name-class"><a href="{{route('namedetails', $searched_name->id)}}">Aabidah</a></td>
                                   <td class="eng-mean">Worshipper of Allah</td>
                                   <td class="ban-mean">ঈশ্বরের পুজারী</td>
                                   <td class="rate">
@@ -223,7 +224,7 @@
                                   </td>
                               </tr>
                               <tr>
-                                  <td class="name-class"><a href="#">Aabidah</a></td>
+                                  <td class="name-class"><a href="{{route('namedetails', $searched_name->id)}}">Aabidah</a></td>
                                   <td class="eng-mean">Worshipper of Allah</td>
                                   <td class="ban-mean">ঈশ্বরের পুজারী</td>
                                   <td class="rate">
@@ -275,6 +276,8 @@
                 </ul>
             </nav>
         </div>
+-->
         </div>
     </section>
+
 @endsection

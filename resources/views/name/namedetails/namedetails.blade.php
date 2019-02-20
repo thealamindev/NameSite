@@ -69,14 +69,19 @@
                                     <i class="fa fa-star-o"></i>
                                     </span></div>
                                     </div>
-                                    <div class="row details-name">
+                                    <!-- <div class="row details-name">
                                         <div class="col-3 pl-0"><p>Views</p></div>
                                         <div class="col-9 pr-0"><span>: 19k</span></div>
-                                    </div>
-                                    <div class="row details-name">
+                                    </div> -->
+                                    <!-- <div class="row details-name">
                                         <div class="col-3 pl-0"><p>Similiar Names</p></div>
-                                        <div class="col-9 similar-name pr-0"><span>: <a href="#">Aabdar</a>, <a href="#">Aabid</a>, <a href="#">Aabidullah</a>, <a href="#">Aabir</a>, <a href="#">Aabis</a>, <a href="#">Aabzaari</a>, <a href="#">Aabzari</a>, <a href="#">Aabidah</a>, &nbsp;&nbsp;<a href="#">Aabira</a>, <a href="#">Aabirah</a>, <a href="#">Aabish</a>, <a href="#">Aabroo</a> </span></div>
-                                    </div>
+                                        <div class="col-9 similar-name pr-0">
+                                          <span>:
+                                            <a href="#">Aabdar</a>,
+                                            <a href="#">Aabidah</a>
+                                          </span>
+                                        </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="share">

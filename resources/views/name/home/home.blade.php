@@ -13,15 +13,17 @@ Infinite Name
                     <div class="banner-text">
                         <h3>Search the name with meaning</h3>
                         <div class="search-name">
-                            <div class="input-group">
-                                <input class="form-control aa" placeholder="Search your name" type="text">
+                            <form action="{{ url('search') }}" method="get">
+                              <div class="input-group">
+                                <input class="form-control aa" placeholder="Search your name" type="text" name="search_string">
                                 <div class="input-group-btn">
                                     <button class="btn btn-default" type="submit">Search</button>
                                 </div>
-                            </div>
+                              </div>
+                            </form>
                             <div class="which-name">
-                                <a href="#">boys name</a>
-                                <a href="#">girls name</a>
+                                <a href="{{ url('/boys') }}">boys name</a>
+                                <a href="{{ url('/girls') }}">girls name</a>
                             </div>
                         </div>
                     </div>
@@ -43,63 +45,63 @@ Infinite Name
                 <div class="col-12 boy">
                     <div class="col-6 names-by-letter mx-auto">
                         <span>Boys name: </span>
-                        <a href="{{ url('/boys') }}/a">a</a>
-                        <a href="{{ url('/boys') }}/b">b</a>
-                        <a href="{{ url('/boys') }}/c">c</a>
-                        <a href="{{ url('/boys') }}/d">d</a>
-                        <a href="{{ url('/boys') }}/e">e</a>
-                        <a href="{{ url('/boys') }}/f">f</a>
-                        <a href="{{ url('/boys') }}/g">g</a>
-                        <a href="{{ url('/boys') }}/h">h</a>
-                        <a href="{{ url('/boys') }}/i">i</a>
-                        <a href="{{ url('/boys') }}/j">j</a>
-                        <a href="{{ url('/boys') }}/k">k</a>
-                        <a href="{{ url('/boys') }}/l">l</a>
-                        <a href="{{ url('/boys') }}/m">m</a>
-                        <a href="{{ url('/boys') }}/n">n</a>
-                        <a href="{{ url('/boys') }}/o">o</a>
-                        <a href="{{ url('/boys') }}/p">p</a>
-                        <a href="{{ url('/boys') }}/q">q</a>
-                        <a href="{{ url('/boys') }}/r">r</a>
-                        <a href="{{ url('/boys') }}/s">s</a>
-                        <a href="{{ url('/boys') }}/t">t</a>
-                        <a href="{{ url('/boys') }}/u">u</a>
-                        <a href="{{ url('/boys') }}/v">v</a>
-                        <a href="{{ url('/boys') }}/w">w</a>
-                        <a href="{{ url('/boys') }}/x">x</a>
-                        <a href="{{ url('/boys') }}/y">y</a>
-                        <a href="{{ url('/boys') }}/z">z</a>
+                        <a href="{{ url('/boys/alphabate') }}/a">a</a>
+                        <a href="{{ url('/boys/alphabate') }}/b">b</a>
+                        <a href="{{ url('/boys/alphabate') }}/c">c</a>
+                        <a href="{{ url('/boys/alphabate') }}/d">d</a>
+                        <a href="{{ url('/boys/alphabate') }}/e">e</a>
+                        <a href="{{ url('/boys/alphabate') }}/f">f</a>
+                        <a href="{{ url('/boys/alphabate') }}/g">g</a>
+                        <a href="{{ url('/boys/alphabate') }}/h">h</a>
+                        <a href="{{ url('/boys/alphabate') }}/i">i</a>
+                        <a href="{{ url('/boys/alphabate') }}/j">j</a>
+                        <a href="{{ url('/boys/alphabate') }}/k">k</a>
+                        <a href="{{ url('/boys/alphabate') }}/l">l</a>
+                        <a href="{{ url('/boys/alphabate') }}/m">m</a>
+                        <a href="{{ url('/boys/alphabate') }}/n">n</a>
+                        <a href="{{ url('/boys/alphabate') }}/o">o</a>
+                        <a href="{{ url('/boys/alphabate') }}/p">p</a>
+                        <a href="{{ url('/boys/alphabate') }}/q">q</a>
+                        <a href="{{ url('/boys/alphabate') }}/r">r</a>
+                        <a href="{{ url('/boys/alphabate') }}/s">s</a>
+                        <a href="{{ url('/boys/alphabate') }}/t">t</a>
+                        <a href="{{ url('/boys/alphabate') }}/u">u</a>
+                        <a href="{{ url('/boys/alphabate') }}/v">v</a>
+                        <a href="{{ url('/boys/alphabate') }}/w">w</a>
+                        <a href="{{ url('/boys/alphabate') }}/x">x</a>
+                        <a href="{{ url('/boys/alphabate') }}/y">y</a>
+                        <a href="{{ url('/boys/alphabate') }}/z">z</a>
                     </div>
                 </div>
                 <div class="col-12 girl">
                     <div class="col-6 names-by-letter mx-auto">
                         <span>Girls name: </span>
-                        <a href="{{ url('/girls') }}/a">a</a>
-                        <a href="{{ url('/girls') }}/b">b</a>
-                        <a href="{{ url('/girls') }}/c">c</a>
-                        <a href="{{ url('/girls') }}/d">d</a>
-                        <a href="{{ url('/girls') }}/e">e</a>
-                        <a href="{{ url('/girls') }}/f">f</a>
-                        <a href="{{ url('/girls') }}/g">g</a>
-                        <a href="{{ url('/girls') }}/h">h</a>
-                        <a href="{{ url('/girls') }}/i">i</a>
-                        <a href="{{ url('/girls') }}/j">j</a>
-                        <a href="{{ url('/girls') }}/k">k</a>
-                        <a href="{{ url('/girls') }}/l">l</a>
-                        <a href="{{ url('/girls') }}/m">m</a>
-                        <a href="{{ url('/girls') }}/n">n</a>
-                        <a href="{{ url('/girls') }}/o">o</a>
-                        <a href="{{ url('/girls') }}/p">p</a>
-                        <a href="{{ url('/girls') }}/q">q</a>
-                        <a href="{{ url('/girls') }}/r">r</a>
-                        <a href="{{ url('/girls') }}/s">s</a>
-                        <a href="{{ url('/girls') }}/t">t</a>
-                        <a href="{{ url('/girls') }}/u">u</a>
-                        <a href="{{ url('/girls') }}/v">v</a>
-                        <a href="{{ url('/girls') }}/w">w</a>
-                        <a href="{{ url('/girls') }}/x">x</a>
-                        <a href="{{ url('/girls') }}/y">y</a>
-                        <a href="{{ url('/girls') }}/z">z</a>
+                        <a href="{{ url('/girls/alphabate') }}/a">a</a>
+                        <a href="{{ url('/girls/alphabate') }}/b">b</a>
+                        <a href="{{ url('/girls/alphabate') }}/c">c</a>
+                        <a href="{{ url('/girls/alphabate') }}/d">d</a>
+                        <a href="{{ url('/girls/alphabate') }}/e">e</a>
+                        <a href="{{ url('/girls/alphabate') }}/f">f</a>
+                        <a href="{{ url('/girls/alphabate') }}/g">g</a>
+                        <a href="{{ url('/girls/alphabate') }}/h">h</a>
+                        <a href="{{ url('/girls/alphabate') }}/i">i</a>
+                        <a href="{{ url('/girls/alphabate') }}/j">j</a>
+                        <a href="{{ url('/girls/alphabate') }}/k">k</a>
+                        <a href="{{ url('/girls/alphabate') }}/l">l</a>
+                        <a href="{{ url('/girls/alphabate') }}/m">m</a>
+                        <a href="{{ url('/girls/alphabate') }}/n">n</a>
+                        <a href="{{ url('/girls/alphabate') }}/o">o</a>
+                        <a href="{{ url('/girls/alphabate') }}/p">p</a>
+                        <a href="{{ url('/girls/alphabate') }}/q">q</a>
+                        <a href="{{ url('/girls/alphabate') }}/r">r</a>
+                        <a href="{{ url('/girls/alphabate') }}/s">s</a>
+                        <a href="{{ url('/girls/alphabate') }}/t">t</a>
+                        <a href="{{ url('/girls/alphabate') }}/u">u</a>
+                        <a href="{{ url('/girls/alphabate') }}/v">v</a>
+                        <a href="{{ url('/girls/alphabate') }}/w">w</a>
+                        <a href="{{ url('/girls/alphabate') }}/x">x</a>
+                        <a href="{{ url('/girls/alphabate') }}/y">y</a>
+                        <a href="{{ url('/girls/alphabate') }}/z">z</a>
                     </div>
                 </div>
             </div>
